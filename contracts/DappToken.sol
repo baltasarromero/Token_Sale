@@ -37,7 +37,7 @@ contract DappToken {
 
     // Transfer
     function transfer(address _to, uint256 _value) public returns (bool success) {
-        // Throws an exception if the sender accont doesn't have enought balance
+        // Throws an exception if the sender accont doesn't have enough balance
         //const senderBalance = await msg.sender );
         require(balanceOf[msg.sender] >= _value);
         // Transfer the balance
